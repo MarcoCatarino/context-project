@@ -1,12 +1,22 @@
 import useTodos from "@/hooks/useTodos";
+import useUser from "@/hooks/useUser";
 
 function Dashboard() {
-  const {todos} = useTodos();
+  console.log("Dashboard");
+  const { todos } = useTodos();
+  const { user, toggleLogin } = useUser();
+
   return (
-    <div>
-      {todos.length}
-    </div>
-  )
+    <>
+      <div>{todos.length}</div>
+      <br />
+      <div>
+        {user.name}
+        <br />
+        <button onClick={() => toggleLogin()}>Login</button>
+      </div>
+    </>
+  );
 }
 
-export default Dashboard
+export default Dashboard;
