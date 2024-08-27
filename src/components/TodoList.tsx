@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import TodosContext from "@/contexts/TodosContext";
+import useTodos from "@/hooks/useTodos";
 
 function TodoList() {
-  const { todos, addTodo } = useContext(TodosContext);
+  const { todos, addTodo } = useTodos();
 
   return (
     <>

@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import TodosContext from "@/contexts/TodosContext";
+import useTodos from "@/hooks/useTodos";
 
 function Dashboard() {
-  const {todos} = useContext(TodosContext);
+  const {todos} = useTodos();
   return (
     <div>
       {todos.length}
