@@ -12,7 +12,7 @@ function Dashboard() {
       <br />
       <div>
         {user.name}
-        <br />
+        <br/>
         <button onClick={() => toggleLogin()}>Login</button>
       </div>
     </>
