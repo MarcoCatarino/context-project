@@ -1,36 +1,7 @@
-import { useReducer } from "react";
+import useReducersTodo from "@/hooks/useReducersTodo";
 
-type Todo = {
-  id?: number;
-  name?: string;
-  description?: string;
-};
-
-type AddAction = {
-  type: "ADD";
-  todo: Todo;
-};
-
-type DeleteAction = {
-  type: "DELETE";
-  todoID?: number;
-};
-
-type Action = AddAction | DeleteAction;
-
-const reducer = (todos: Todo[], action: Action) => {
-  switch (action.type) {
-    case "ADD":
-      return [action.todo, ...todos];
-
-    case "DELETE":
-      return todos.filter((t) => t.id !== action.todoID);
-  }
-  return todos;
-};
-
-export default function TodoReducer() {
-  const [todos, dispatch] = useReducer(reducer, []);
+function TodoContent() {
+    const { todos, dispatch } = useReducersTodo();
   return (
     <>
       <button
@@ -73,3 +44,5 @@ export default function TodoReducer() {
     </>
   );
 }
+
+export default TodoContent;

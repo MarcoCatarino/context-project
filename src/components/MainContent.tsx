@@ -1,7 +1,7 @@
 import useTitles from "@/hooks/useTitle";
 import TodoList from "./TodoList";
 import Contador from "./Contador";
-import TodoReducer from "./TodoReducer";
+import ReducersTodos from "./ReducersTodos";
 
 function MainContent() {
   console.log("Main Content");
@@ -19,7 +19,7 @@ function MainContent() {
       </div>
       <div>
         <h2> === TODO + REDUCER === </h2>
-        <TodoReducer />
+        <ReducersTodos />
       </div>
     </>
   );
