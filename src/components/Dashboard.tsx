@@ -1,5 +1,5 @@
-import useTodos from "@/hooks/useTodos";
-import useUser from "@/hooks/useUser";
+import useTodos from "@/todos/useTodos";
+import useUser from "@/users/useUser";
 
 function Dashboard() {
   console.log("Dashboard");
@@ -12,7 +12,7 @@ function Dashboard() {
       <br />
       <div>
         {user.name}
-        <br/>
+        <br />
         <button onClick={() => toggleLogin()}>Login</button>
       </div>
     </>

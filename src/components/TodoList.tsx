@@ -1,7 +1,7 @@
-import useTodos from "@/hooks/useTodos";
+import useTodos from "@/todos/useTodos";
 
 function TodoList() {
-  console.log('Todo List')
+  console.log("Todo List");
   const { todos, addTodo } = useTodos();
 
   return (

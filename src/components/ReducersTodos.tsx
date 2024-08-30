@@ -1,4 +1,4 @@
-import ReducersTodosProvider from "@/providers/ReducersTodosProvider";
+import { ReducersTodosProvider } from "@/todosReducer";
 import TodoContent from "./TodoContent";
 
 export default function TodoReducer() {

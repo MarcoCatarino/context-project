@@ -1,4 +1,4 @@
-import useReducersTodo from "@/hooks/useReducersTodo";
+import { useReducersTodo } from "@/todosReducer";
 
 function TodoContent() {
     const { todos, dispatch } = useReducersTodo();

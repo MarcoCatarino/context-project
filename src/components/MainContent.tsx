@@ -1,4 +1,4 @@
-import useTitles from "@/hooks/useTitle";
+import useTitles from "@/title/useTitle";
 import TodoList from "./TodoList";
 import Contador from "./Contador";
 import ReducersTodos from "./ReducersTodos";

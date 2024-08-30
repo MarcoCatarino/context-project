@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 
 import { Todo } from "@/types";
-import TodosContext from "@/contexts/TodosContext";
+import TodosContext from "@/todos/TodosContext";
 
 type Props = {
   children: ReactNode;

@@ -1,9 +1,8 @@
-import TodosProvider from "@/providers/TodosProvider";
-import UserProvider from "@/providers/UserProvider";
-import TitlesProvider from "@/providers/TitlesProvider";
+import TodosProvider from "@/todos/TodosProvider";
+import UserProvider from "@/users/UserProvider";
+import TitlesProvider from "@/title/TitlesProvider";
 
 import { ReactNode } from "react";
-import "./App.css";
 
 type Props = {
     children: ReactNode

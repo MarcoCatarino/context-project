@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import TitleContext from "@/contexts/TitleContext";
+import TitleContext from "./TitleContext";
 
 type Props = {
   children: ReactNode;

@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import UserContext from "@/contexts/UserContext";
+import UserContext from "./UserContext";
 
 type Props = {
   children: ReactNode;
